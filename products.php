@@ -69,7 +69,7 @@
 		<div class="col-xs-12 col-sm-6 col-md-4">
 			<div class="panel panel-default">
 				<div class="panel-body">
-					Basic panel example
+					<img src="img/T_1761.jpg" class="img-responsive">
 				</div>
 			</div>
 		</div>
@@ -77,7 +77,7 @@
 	<div class="col-xs-12 col-sm-6 col-md-4">
 		<div class="panel panel-default">
 			<div class="panel-body">
-				Basic panel example
+				<img src="img/T_1777.jpg" class="img-responsive">
 			</div>
 		</div>
 	</div>
