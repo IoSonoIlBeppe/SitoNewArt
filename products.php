@@ -31,21 +31,21 @@
 			</div>
 			<div id="navbar3" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="index.php">Home</a></li>
-					<li><a href="about.php">Chi siamo</a></li>
+					<li ><a href="index.php">Home</a></li>
+					<li><a href="#">Chi siamo</a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Prodotti <span class="caret"></span></a>
+						<a href="categories.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Prodotti <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#">Tele</a></li>
-							<li><a href="#">Specchiere</a></li>
-							<li><a href="#">Orologi</a></li>
+							<li><a href="products.php">Tele</a></li>
+							<li><a href="products.php">Specchiere</a></li>
+							<li><a href="products.php">Orologi</a></li>
 							<!--<li class="divider"></li>
 							<li class="dropdown-header">Nav header</li>
 							<li><a href="#">Separated link</a></li>
 							<li><a href="#">One more separated link</a></li>-->
 						</ul>
 					</li>
-					<li><a href="#">Contatti</a></li>
+					<li><a href="about.php">Contatti</a></li>
 
 				</ul>
 			</div>
@@ -56,56 +56,75 @@
 	<!-- end navbar -->
 	
 	<!-- content -->
-	<div class="container">
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<div class="panel panel-default">
-				<div class="panel-body">
-					Basic panel example
-				</div>
-			</div>
-		</div>
-	
+	<div class="container-fluid">
+        
+        <div class="hidden-xs col-sm-3">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+              </div>
+              <div class="panel-body">
+                Panel content
+              </div>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-inverse navbar-collapse hidden-sm hidden-md hidden-lg">
+            <div class="container-fliud">
+                
+            </div>
+        </nav>
+        
+        <div class="col-xs-12 col-sm-9">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <img src="img/T_1761.jpg" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
 
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<div class="panel panel-default">
-				<div class="panel-body">
-					<img src="img/T_1761.jpg" class="img-responsive">
-				</div>
-			</div>
-		</div>
-	
-	<div class="col-xs-12 col-sm-6 col-md-4">
-		<div class="panel panel-default">
-			<div class="panel-body">
-				<img src="img/T_1777.jpg" class="img-responsive">
-			</div>
-		</div>
-	</div>
-	
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<div class="panel panel-default">
-				<div class="panel-body">
-					Basic panel example
-				</div>
-			</div>
-		</div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <img src="img/T_1761.jpg" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
 
-	
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<div class="panel panel-default">
-				<div class="panel-body">
-					Basic panel example
-				</div>
-			</div>
-		</div>
-	
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<div class="panel panel-default">
-				<div class="panel-body">
-					Basic panel example
-				</div>
-			</div>
-		</div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img src="img/T_1761.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <img src="img/T_1761.jpg" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <img src="img/T_1761.jpg" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img src="img/T_1761.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 	</div>
 	<!-- end content -->
 	

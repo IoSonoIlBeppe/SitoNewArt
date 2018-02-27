@@ -31,7 +31,7 @@
 			<div id="navbar3" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="index.php">Home</a></li>
-					<li><a href="about.php">Chi siamo</a></li>
+					<li><a href="#">Chi siamo</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Prodotti <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
@@ -44,7 +44,7 @@
 							<li><a href="#">One more separated link</a></li>-->
 						</ul>
 					</li>
-					<li><a href="#">Contatti</a></li>
+					<li><a href="about.php">Contatti</a></li>
 
 				</ul>
 			</div>

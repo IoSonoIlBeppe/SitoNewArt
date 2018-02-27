@@ -12,6 +12,12 @@ body {
   flex-direction: column;
 }
 
+@media only screen and (max-width: 767px) {
+    body {
+        margin-bottom: 120px;
+    }
+}
+
 /* CONTENT */
 .content {
   flex: 1 0 auto;
@@ -74,6 +80,11 @@ li.dropdown:hover > .dropdown-menu {
 
 /* CAROUSEL */
 
+.carousel {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .carousel-inner > .item > img {
     margin: 0 auto;
     width: 100%;
@@ -121,6 +132,7 @@ li.dropdown:hover > .dropdown-menu {
   background-color: #222;
 	flex-shrink: 0;
 }
+
 
 
 
@@ -288,3 +300,10 @@ img {
     opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1); } }
+
+/* FONT SIZE */
+@media only screen and (max-width: 992px){
+    body {
+        font-size: 10px;
+    }
+}
