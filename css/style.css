@@ -39,12 +39,26 @@ body {
 }
 
 .homenav .navbar-brand {
-  height: 80px;
+  height: 100%;
 }
 
+@media only screen and (max-width: 767px) {
+    
+    .navbar-brand>img {
+      height: 96px;
+      padding: 15px;
+      width: auto;
+    }
+
+    .homenav .navbar-brand {
+      height: 100%;
+    }
+}
+
+
 .homenav .nav >li >a {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 38px;
+  padding-bottom: 38px;
 }
 .homenav .navbar-toggle {
   padding: 10px;

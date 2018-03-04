@@ -15,8 +15,49 @@
 	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+    
+    <!-- navbar -->
+	<nav class="homenav navbar navbar-inverse navbar-static-top ">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+                    <img class="img-responsive hidden-xs" src="img/logo_rett.jpg" alt="New Art Productions">
+                    <img class="img-responsive hidden-sm hidden-md hidden-lg" src="img/logo_quadrato.jpg" alt="New Art Productions">
+				</a>
+			</div>
+			<div id="navbar3" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="index.php">Home</a></li>
+					<li><a href="#">Chi siamo</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Prodotti <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="products.php">Tele</a></li>
+							<li><a href="products.php">Specchiere</a></li>
+							<li><a href="products.php">Orologi</a></li>
+							<!--<li class="divider"></li>
+							<li class="dropdown-header">Nav header</li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">One more separated link</a></li>-->
+						</ul>
+					</li>
+					<li><a href="about.php">Contatti</a></li>
 
-<div class="container">
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+		<!--/.container-fluid -->
+	</nav>
+	<!-- end navbar -->
+
+    <div class="container">
 		<div class="card">
 			<div class="container-fliud">
 				<div class="wrapper row">
@@ -29,6 +70,7 @@
 						  <div class="tab-pane" id="pic-4"><img src="img/T_1781.jpg" /></div>
 						  <div class="tab-pane" id="pic-5"><img src="img/T_1802.jpg" /></div>
 						</div>
+                        
 						<ul class="preview-thumbnail nav nav-tabs">
 						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="img/T_1761.jpg" /></a></li>
 						  <li><a data-target="#pic-2" data-toggle="tab"><img src="img/T_1777.jpg" /></a></li>

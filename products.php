@@ -26,7 +26,9 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="http://disputebills.com"><img src="https://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png" alt="Dispute Bills">
+				<a class="navbar-brand" href="http://disputebills.com">
+                    <img class="img-responsive hidden-xs" src="img/logo_rett.jpg" alt="New Art Productions">
+                    <img class="img-responsive hidden-sm hidden-md hidden-lg" src="img/logo_quadrato.jpg" alt="New Art Productions">
 				</a>
 			</div>
 			<div id="navbar3" class="navbar-collapse collapse">

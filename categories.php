@@ -26,15 +26,17 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="http://disputebills.com"><img src="https://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png" alt="Dispute Bills">
+				<a class="navbar-brand" href="http://disputebills.com">
+                    <img class="img-responsive hidden-xs" src="img/logo_rett.jpg" alt="New Art Productions">
+                    <img class="img-responsive hidden-sm hidden-md hidden-lg" src="img/logo_quadrato.jpg" alt="New Art Productions">
 				</a>
 			</div>
 			<div id="navbar3" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="index.php">Home</a></li>
-					<li><a href="about.php">Chi siamo</a></li>
+					<li ><a href="index.php">Home</a></li>
+					<li><a href="#">Chi siamo</a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Prodotti <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false">Prodotti <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="#">Tele</a></li>
 							<li><a href="#">Specchiere</a></li>
@@ -45,7 +47,7 @@
 							<li><a href="#">One more separated link</a></li>-->
 						</ul>
 					</li>
-					<li><a href="#">Contatti</a></li>
+					<li><a href="about.php">Contatti</a></li>
 
 				</ul>
 			</div>
