@@ -18,23 +18,18 @@
 
     <?php
         try {
-            $dbconn = new PDO('mysql:host=ffaggian.no-ip.org;port=3306;dbname=newart_prova', 'root', 'beppe');
+            $dbconn = new PDO('mysql:host=127.0.0.1;port=3306;dbname=newart_prova', 'root', 'beppe');
             $dbconn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
-            echo $e->getMessage();
+            
         }
-
-        $statement = $dbconn->prepare('select LinkImmagine from "Immagini"');
+        $statement = $dbconn->prepare('SELECT LinkImmagine FROM Immagini');
         $statement->execute();
 
-        while ($record = $statement->fetch(PDO::FETCH_ASSOC)) {
-            foreach ($record as $row) {?>
-                <img src="<?php echo $row["LinkImmagine"] ?>">
+        while ($record = $statement->fetch(PDO::FETCH_ASSOC)) {?>
+                <img src="<?php echo $record['LinkImmagine']; ?>">
                 <?php
-            }
         }
         ?>
-
-        <?php echo ciao ?>
 </body>
 </html>

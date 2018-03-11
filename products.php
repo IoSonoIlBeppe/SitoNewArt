@@ -15,6 +15,12 @@
 		<script src="js/bootstrap.min.js"></script>
 	</head>
 <body>
+        <?php 
+            try {
+                $dbconn = new PDO('mysql:host=127.0.0.1;port=3306;dbname=newart_prova', 'root', 'beppe');
+                $dbconn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            } catch (PDOException $e) {}
+        ?>
 
 	<!-- navbar -->
 	<nav class="homenav navbar navbar-inverse navbar-static-top ">
@@ -78,53 +84,23 @@
         </nav>
         
         <div class="col-xs-12 col-sm-9">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="img/T_1761.jpg" class="img-responsive">
+
+            <?php 
+                $statement = $dbconn->prepare('SELECT LinkImmagine FROM Immagini');
+                $statement->execute();
+
+                while ($record = $statement->fetch(PDO::FETCH_ASSOC)) {
+            ?>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img src="<?php echo $record['LinkImmagine']; ?>" class="img-responsive">
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="img/T_1761.jpg" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <img src="img/T_1761.jpg" class="img-responsive">
-                    </div>
-                </div>
-            </div>
-            
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="img/T_1761.jpg" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="img/T_1761.jpg" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <img src="img/T_1761.jpg" class="img-responsive">
-                    </div>
-                </div>
-            </div>
+            <?php
+                }
+            ?>
         </div>
         
 	</div>
